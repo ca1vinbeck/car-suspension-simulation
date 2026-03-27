@@ -132,7 +132,6 @@ plt.show()
 # Pick the indices
 pareto_indices = np.where(pareto_mask)[0]
 middle_idx = pareto_indices[pareto_indices.size//2]  # middle Pareto point
-print(middle_idx)
 
 # Convert extreme points to flat indices
 min_accel_idx_flat = np.ravel_multi_index(min_accel_idx, A.shape)
